@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="./img/logo_nav.png">
+        <meta http-equiv="refresh" content />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/full.email.css">
+        <title>Phirus</title>
+    </head>
+
+    <body>
+        <div class="container_header">
+            <div class="top_header">
+                <span class="top_title">Check</span>
+                <a href="home.php"><img class="top_icon" src="./img/arr33.svg"
+                        alt></a>
+                <span class="top_title">Result</span>
+            </div>
+            <div class="text_and_img">
+                <a href="home.php"><img class="top_logo"
+                        src="./img/Logo (1).svg" alt></a>
+                <a class="text_1" href="home.php">Phirus</a>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container_navbar">
+                <p class="p">Full Mail Analysis</p>
+            </div>
+        </nav>
+        <div class="Attachment_Analysis" id="Attachment_Analysis">
+            <h1>Attachment Analysis</h1>
+            <div class="Attachment_box">
+                <label for="fileInput" class="file_label">
+                    <img class="upload_iocn" id="uploadIcon"
+                        src="./img/file.icon.svg" alt="Upload Icon">
+                    <span id="fileName" class="file-name"
+                        style="display:none;"></span>
+                </label>
+                <input id="fileInput" type="file" hidden>
+
+                <button id="upload_button" class="upload_button">Upload The
+                    Attachment</button>
+            </div>
+        </div>
+
+        <div class="container_email_details">
+            <div class="Email_Details">
+                <img src="./img/emi.svg" alt>
+                <p class="text_1_Email_Details">Email Details</p>
+            </div>
+            <p class="text_one">
+                <strong class="text_strong">Date</strong><span class="text_span"
+                    id="date">Mon, 31 Mar 2025 19:30:57 +0000</span>
+            </p>
+            <hr>
+            <p class="text">
+                <strong class="text_strong">Sender Name</strong><span
+                    class="text_span" id="sender_name">Reddit</span>
+            </p>
+            <hr>
+            <p class="text">
+                <strong class="text_strong">Sender Email</strong><span
+                    class="text_span"
+                    id="sender_email">noreply@redditmail.com</span>
+            </p>
+            <hr>
+            <p class="text">
+                <strong class="text_strong">Sender Domain</strong><span
+                    class="text_span" id="sender_domain">redditmail.com</span>
+            </p>
+            <hr>
+            <p class="text">
+                <strong class="text_strong">Sender IP</strong><span
+                    class="text_span" id="sender_ip">Not found</span>
+            </p>
+            <hr>
+            <p class="text">
+                <strong class="text_strong">Reply-To</strong><span
+                    class="text_span" id="reply_to">None</span>
+            </p>
+            <hr>
+            <p class="text">
+                <strong class="text_strong">Return-Path</strong><span
+                    class="text_span"
+                    id="return_path"><01000195edaf823c-6726fb26-72ce-43e6-9a8b-814e8f6ca4d1-000000@amazonses.com></span>
+            </p>
+            <hr>
+            <p class="text">
+                <strong class="text_strong">DMARC</strong><span
+                    class="text_span" id="dmarc">pass</span>
+            </p>
+            <hr>
+            <p class="text">
+                <strong class="text_strong">DKIM</strong><span class="text_span"
+                    id="dkim">pass</span>
+            </p>
+            <hr>
+            <p class="text">
+                <strong class="text_strong">Recipient Email</strong><span
+                    class="text_span"
+                    id="recipient">mahmoudnourhan836@gmail.com</span>
+            </p>
+            <hr>
+            <p class="text">
+                <strong class="text_strong">Subject</strong>
+                <span class="text_span"
+                    id="subject">"Prefect - too expensive?"</span>
+            </p>
+            <hr>
+            <p class="text">
+                <strong class="text_strong">SPF</strong><span class="text_span"
+                    id="spf">
+                    pass (google.com: domain of
+                    <br>
+                    01000195edaf823c-6726fb26-72ce-43e6-9a8b-814e8f6ca4d1-000000@amazon
+                    <br>ses.com designates 54.240.72.93 as permitted sender)
+                    client-ip=54.240.72.93;
+                </span>
+            </p>
+        </div>
+
+        <div class="container_Virus_Total">
+
+            <div class="Virus_Total">
+                <img src="./img/Virus.svg" alt>
+                <p class="text_2_Virus_Total">VirusTotal Domain Last Analysis
+                    Stats:</p>
+            </div>
+
+            <p class="text_three">
+                <strong class="text_strong_one">Malicious</strong><span
+                    class="text_span_one" id="malicious1">0</span>
+            </p>
+            <hr>
+            <p class="text_two">
+                <strong class="text_strong_one">Suspicious</strong><span
+                    class="text_span_one" id="suspicious1">0</span>
+            </p>
+            <hr>
+            <p class="text_two">
+                <strong class="text_strong_one">Undetected</strong><span
+                    class="text_span_one" id="undetected1">31</span>
+            </p>
+            <hr>
+            <p class="text_two">
+                <strong class="text_strong_one">Harmless</strong><span
+                    class="text_span_one" id="harmless1">63</span>
+            </p>
+            <hr>
+            <p class="text_two">
+                <strong class="text_strong_one">Timeout</strong><span
+                    class="text_span_one" id="timeout1">0</span>
+            </p>
+            <hr>
+
+            <div class="WHOIS_Information">
+                <img src="./img/whois privacy.svg" alt>
+                <p class="text_3_WHOIS_Information">WHOIS Information:</p>
+            </div>
+
+            <p class="text_two">
+                <strong class="text_strong_one">Creation Date</strong><span
+                    class="text_span_one"
+                    id="whois_creation_date">[datetime.datetime(2011,
+                    5, 31, 14, 49, 10), datetime.datetime(2011, 5, 31, 14, 49,
+                    10,
+                    <br> tzinfo=datetime.timezone.utc)]</span>
+            </p>
+            <hr>
+            <p class="text_two">
+                <strong class="text_strong_one">Expiration Date</strong><span
+                    class="text_span_one"
+                    id="whois_expiration_date">[datetime.datetime(2026,
+                    5, 31, 14, 49,
+                    10), datetime.datetime(2026, 5, 31, 0, 0,
+                    <br> tzinfo=datetime.timezone.utc)]<br>
+                    Organization: Reddit Inc.</span>
+            </p>
+        </div>
+
+        <div class="container_Suspicious_subject">
+            <div class="Subject_Analysis">
+                <img src="./img/icon-park_market-analysis.svg" alt>
+                <p class="text_4_Subject_Analysis">Subject Analysis</p>
+            </div>
+            <div class="Suspicious_subject">
+                <img src="./img/Loading.svg" alt>
+                <p class="text_5_Suspicious_subject">Checking for suspicious
+                    subject keywords...</p>
+            </div>
+            <div class="image_and_text_Suspicious_subject">
+                <img src="./img/Palm recognition.svg" alt>
+                <span>No suspicious words found in the subject.</span>
+            </div>
+        </div>
+
+        <div class="container_Extracting_URLS">
+            <div class="Extracting_URLS">
+                <img src="./img/catppuccin_url.svg" alt>
+                <p class="text_6_Extracting_URLS">URL Analysis</p>
+            </div>
+            <p class="text_four">
+                <strong class="text_strong_four">harmless</strong><span
+                    class="text_span_four" id="harmless2">0</span>
+            </p>
+            <hr>
+            <p class="text_four">
+                <strong class="text_strong_four">malicious</strong><span
+                    class="text_span_four" id="malicios2">8</span>
+            </p>
+            <hr>
+            <p class="text_four">
+                <strong class="text_strong_four">suspicious</strong><span
+                    class="text_span_four" id="suspicios2">3</span>
+            </p>
+            <hr>
+            <p class="text_four">
+                <strong class="text_strong_four">undetected</strong><span
+                    class="text_span_four" id="undetected2">65</span>
+            </p>
+            <hr>
+            <p class="text_four">
+                <strong class="text_strong_four">Timeout</strong><span
+                    class="text_span_four" id="timeout2">0</span>
+            </p>
+        </div>
+
+        <div class="container_Extracting_Attachments">
+
+            <div class="attachment">
+                <img src="./img/attachment.svg" alt>
+                <p class="text_7_Extracting_Attachments">Attachment Analysis</p>
+            </div>
+
+            <p class="text_five">
+                <strong class="text_strong_five">harmless</strong><span
+                    class="text_span_five" id="harmless3">1</span>
+            </p>
+            <hr>
+            <p class="text_five">
+                <strong class="text_strong_five">malicious</strong><span
+                    class="text_span_five" id="malicios3">42</span>
+            </p>
+            <hr>
+            <p class="text_five">
+                <strong class="text_strong_five">suspicious</strong><span
+                    class="text_span_five" id="suspicios3">5</span>
+            </p>
+            <hr>
+            <p class="text_five">
+                <strong class="text_strong_five">undetected</strong><span
+                    class="text_span_five" id="undetected3">10</span>
+            </p>
+            <hr>
+            <p class="text_five">
+                <strong class="text_strong_five">Timeout</strong><span
+                    class="text_span_five" id="timeout3">0</span>
+            </p>
+        </div>
+
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer_section_1">
+                    <div class="icon_and_text">
+                        <a href><img class="img_1" src="./img/Logo (1).svg"
+                                alt></a>
+                        <a href>
+                            <h2 class="text_h2_section_1">Phirus</h2>
+                        </a>
+                    </div>
+                    <p class="p_section_1">Copyright © 2024 Phirus.</p>
+                    <span class="span_section_1">All rights reserved</span>
+                    <div class="icon_three_section_1">
+                        <a href><img class="img_2" src="./img/Social Icons.svg"
+                                alt="Instagram"></a>
+                        <a href><img class="img_3" src="./img/Icons2.svg"
+                                alt="Twitter"></a>
+                        <a href><img class="img_4" src="./img/Icons3.svg"
+                                alt="Youtube"></a>
+                    </div>
+                </div>
+                <div class="container_three">
+                    <div class="footer_section_2">
+                        <h2 class="text_h2_section_2">Company</h2>
+                        <ul>
+                            <li><a href>About us</a></li>
+                            <li><a href>Blog</a></li>
+                            <li><a href>Contact us</a></li>
+                            <li><a href>Pricing</a></li>
+                            <li><a href>Testimonials</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_section_3">
+                        <h2 class="text_h2_section_3">Support</h2>
+                        <ul>
+                            <li><a href>Help center</a></li>
+                            <li><a href>Terms of service</a></li>
+                            <li><a href>Legal</a></li>
+                            <li><a href>Privacy policy</a></li>
+                            <li><a href>Status</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_section_4">
+                        <h2 class="text_h2_section_4">Stay up to date</h2>
+                        <form class="subscribe_form">
+                            <input type="email" placeholder="Your email address"
+                                required>
+                            <button type="submit"><img src="./img/0.svg"
+                                    alt></button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <script>
+           const fileInput = document.getElementById("fileInput");
+           const fileNameSpan = document.getElementById("fileName");
+           const uploadIcon = document.getElementById("uploadIcon");
+
+           fileInput.addEventListener('change', () => {
+             if (fileInput.files.length > 0) {
+               const file = fileInput.files[0];
+    
+               uploadIcon.style.display = 'none';
+
+               fileNameSpan.textContent = file.name;
+               fileNameSpan.style.display = 'inline-block'; 
+             } else {
+               uploadIcon.style.display = 'inline-block';
+               fileNameSpan.style.display = 'none';
+             }
+           });
+
+
+
+    document.getElementById("upload_button").addEventListener("click", function(event) {
+    event.preventDefault();
+    const fileInput = document.getElementById("fileInput");  
+    const file = fileInput.files[0];
+
+    if (!file) {
+        alert("Please select an .eml or .txt file.");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    fetch("https://tester-production-caf8.up.railway.app/analyze_email", {
+        method: "POST",
+        body: formData,
+    })
+    .then(res => res.json())
+    .then(data => {
+ 
+    const emailDetails = data.email_details || {};
+    const domainAnalysis = data.domain_analysis || {};
+    const virusTotalDomain = domainAnalysis.virustotal || {};
+    const whoisData = domainAnalysis.whois || {};
+    const urlAnalysis = data.url_analysis || [];
+    const attachmentAnalysis = data.attachment_analysis || [];
+
+    document.getElementById("date").textContent = 
+        emailDetails.date || "No date found";
+    document.getElementById("sender_name").textContent = 
+        emailDetails.sender_name || "No sender name";
+    document.getElementById("sender_email").textContent = 
+        emailDetails.sender_email || "No sender email";
+    document.getElementById("sender_domain").textContent = 
+        emailDetails.sender_domain || "No sender domain";
+    document.getElementById("sender_ip").textContent = 
+        emailDetails.sender_ip || "No sender IP";
+    document.getElementById("reply_to").textContent = 
+        emailDetails.reply_to || "No reply-to";
+    document.getElementById("return_path").textContent = 
+        emailDetails.return_path || "No return path";
+    document.getElementById("dmarc").textContent = 
+        emailDetails.dmarc || "No DMARC";
+    document.getElementById("dkim").textContent = 
+        emailDetails.dkim || "No DKIM";
+    document.getElementById("recipient").textContent = 
+        emailDetails.recipient || "No recipient";
+    document.getElementById("subject").textContent = 
+        emailDetails.subject || "No subject";
+    document.getElementById("spf").textContent = 
+        emailDetails.spf || "No SPF";
+
+    document.getElementById("malicious1").textContent = 
+        virusTotalDomain.malicious ?? "0";
+    document.getElementById("suspicious1").textContent = 
+        virusTotalDomain.suspicious ?? "0";
+    document.getElementById("undetected1").textContent = 
+        virusTotalDomain.undetected ?? "0";
+    document.getElementById("harmless1").textContent = 
+        virusTotalDomain.harmless ?? "0";
+    document.getElementById("timeout1").textContent = 
+        virusTotalDomain.timeout ?? "0";
+
+    document.getElementById("whois_creation_date").textContent = 
+        whoisData.creation_date || "No creation date";
+    document.getElementById("whois_expiration_date").textContent = 
+        whoisData.expiration_date || "No expiration date";
+
+   
+    const urlStats = {
+        harmless: 0,
+        malicious: 0,
+        suspicious: 0,
+        undetected: 0,
+        timeout: 0
+    };
+    urlAnalysis.forEach(url => {
+        const stats = url.virustotal || {};
+        urlStats.harmless += stats.harmless || 0;
+        urlStats.malicious += stats.malicious || 0;
+        urlStats.suspicious += stats.suspicious || 0;
+        urlStats.undetected += stats.undetected || 0;
+        urlStats.timeout += stats.timeout || 0;
+    });
+    document.getElementById("harmless2").textContent = urlStats.harmless;
+    document.getElementById("malicios2").textContent = urlStats.malicious;
+    document.getElementById("suspicios2").textContent = urlStats.suspicious;
+    document.getElementById("undetected2").textContent = urlStats.undetected;
+    document.getElementById("timeout2").textContent = urlStats.timeout;
+
+   
+    const attachmentStats = {
+        harmless: 0,
+        malicious: 0,
+        suspicious: 0,
+        undetected: 0,
+        timeout: 0
+    };
+    attachmentAnalysis.forEach(attachment => {
+        const stats = attachment.virustotal || {};
+        attachmentStats.harmless += stats.harmless || 0;
+        attachmentStats.malicious += stats.malicious || 0;
+        attachmentStats.suspicious += stats.suspicious || 0;
+        attachmentStats.undetected += stats.undetected || 0;
+        attachmentStats.timeout += stats.timeout || 0;
+    });
+    document.getElementById("harmless3").textContent = attachmentStats.harmless;
+    document.getElementById("malicios3").textContent = attachmentStats.malicious;
+    document.getElementById("suspicios3").textContent = attachmentStats.suspicious;
+    document.getElementById("undetected3").textContent = attachmentStats.undetected;
+    document.getElementById("timeout3").textContent = attachmentStats.timeout;
+})
+    .catch(error => {
+        console.error("Fetch error:", error);
+        alert("An error occurred while extracting email info: " + error.message);
+    });
+});
+
+
+     </script>
+
+    </body>
+
+</html>

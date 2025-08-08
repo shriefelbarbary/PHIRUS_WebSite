@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="./img/logo_nav.png">
+        <meta http-equiv="refresh" content />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/log.otp.css">
+        <title>Phirus</title>
+    </head>
+
+    <body>
+        <div class="Back_Arrow">
+            <a href="login.forget.html">
+                <img class="icon" src="./img/Back-Arrow.svg"></a>
+        </div>
+        <div class="logo">
+            <img class="logo_img" src="./img/logo_home.png" alt="logo_img">
+        </div>
+        <div class="container">
+            <div class="card">
+                <form>
+                    <h1>OTP Verification</h1>
+                    <img class="logo_otp"
+                        src="./img/_17._otp_OpenDocument_Presentation_Template_.svg"
+                        alt>
+                    <p class="text">Enter the verification code we just sent
+                        on<br>
+                        your email address.</p>
+                    <div class="otp_box">
+                        <input type="text" required maxlength="1" autofocus>
+                        <input type="text" required maxlength="1">
+                        <input type="text" required maxlength="1">
+                        <input type="text" required maxlength="1">
+                    </div>
+                    <button>Verify</button>
+                    <p class="resend">
+                        Didn’t receive code? <a href="#"
+                            onclick="resendCode()">Resend</a>
+                    </p>
+
+                    <span id="resendMessage" style="color: green;"></span>
+                </form>
+            </div>
+        </div>
+
+        <script>
+function resendCode() {
+    fetch('api/resend_code.php', {
+        method: 'POST',
+        credentials: 'include'
+    })
+    .then(res => res.json())
+    .then(data => {
+        const msg = document.getElementById('resendMessage');
+        if (data.success) {
+            msg.innerText = '✅ Code resent successfully.';
+        } else {
+            msg.innerText = '❌ Failed to resend code.';
+            msg.style.color = 'red';
+        }
+    })
+    .catch(err => {
+        console.error(err);
+        document.getElementById('resendMessage').innerText = '❌ Error occurred.';
+    });
+}
+</script>
+
+    </body>
+
+</html>
